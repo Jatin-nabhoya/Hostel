@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/activity_dashboard.xml" value="0.23645833333333333" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/drawable/bottomsheet.xml" value="0.2415" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/drawable/gatepass.xml" value="0.1725" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/drawable/ic_76.xml" value="0.1725" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/drawable/ic_gatepass.xml" value="0.107" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/drawable/ic_group_75.xml" value="0.1725" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2235" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/activity_forgot_password1.xml" value="0.264" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/activity_gatepass.xml" value="0.19912280701754387" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/activity_login.xml" value="0.23645833333333333" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/bottomsheet_dialog.xml" value="0.264" />
+        <entry key="..\:/D/AndroidStudio/project/Hostel/app/src/main/res/layout/toolbar.xml" value="0.2" />
+        <entry key="..\:/Users/jvnab/.gradle/caches/transforms-3/bfec8dfcaf6c34e166a516bbd7a3f400/transformed/material-1.6.1/res/layout/test_exposed_dropdown_menu.xml" value="0.4" />
       </map>
     </option>
   </component>
