@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">Hostel</string>
     <string name="hostel">RKU HOSTEL</string>
+    <string name="hostel_app">Hostel App</string>
+    <string name="student">Student</string>
+    <string name="gatepass">Gate Pass</string>
+    <string name="rku_Address">Bhavagar Highway , Kasturbadham , Rajkot. Mo :9909952030 /31</string>
+    <string name="boy_girl_hostel">Boy / Girl Hostel</string>
+    <string name="sr_no">Sr No :</string>
+    <string name="form_name">Name :</string>
+    <string name="form_enrollment_no">Enrollment no :</string>
+    <string name="form_pass_type">Pass Type :</string>
+    <string name="form_to_date">To Date :</string>
+    <string name="form_reason">Reason :</string>
+    <string name="btn_apply">Apply</string>
+    <string name="GatePass">Gate Pass</string>
+    <string name="gallery">Gallery</string>
+    <string name="announcement">Announcement</string>
+    <string name="ComplaintBox">ComplaintBox</string>
+    <string name="alert">Alert</string>
+    <string name="MessMenu">Mess Menu</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="login">Login</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="WelcomeBack">Welcome Back !</string>
+    <string name="fp1_text">Don’t Worry \nEnter your email and we’ll \nsend you a verification code to \nreset your password.</string>
+    <string name="profile">Profile</string>
 </resources>
