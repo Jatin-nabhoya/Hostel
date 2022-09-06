@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/sheet">
     <LinearLayout
@@ -19,14 +20,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jatin Nabhoya"
+            android:text="John Andrew"
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="jnabhoya474@rku.ac.in"
+            android:text="jandrew123@gmail.com"
             android:textSize="20sp"
             android:textColor="#888888"/>
         <ImageView
@@ -52,15 +53,17 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/navgatepass"
                 android:layout_weight="5"
+                android:layout_marginStart="-4dp"
                 />
-            <TextView
+            <Button
+                android:id="@+id/btn_GatePass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gate Pass"
-                android:layout_gravity="center"
-                android:layout_weight="15"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
+                android:text="@string/gatepass"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,15 +77,17 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/navgallery"
                 android:layout_weight="4"
+                android:layout_marginStart="-4dp"
                 />
-            <TextView
+            <Button
+                android:id="@+id/btn_Gallery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gallery"
-                android:layout_gravity="center"
-                android:layout_weight="16"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
+                android:text="@string/gallery"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
 
         </LinearLayout>
         <LinearLayout
@@ -97,15 +102,17 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/navannouncement"
                 android:layout_weight="6"
+                android:layout_marginStart="-3dp"
                 />
-            <TextView
+            <Button
+                android:id="@+id/btn_Announcement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Announcement"
-                android:layout_gravity="center"
-                android:layout_weight="14"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
+                android:text="@string/announcement"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
 
         </LinearLayout>
         <LinearLayout
@@ -120,15 +127,17 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/navcomplainbox"
                 android:layout_weight="5"
+                android:layout_marginStart="2dp"
                 />
-            <TextView
+            <Button
+                android:id="@+id/btn_ComplaintBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Complainbox"
-                android:layout_gravity="center"
-                android:layout_weight="15"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
+                android:text="@string/ComplaintBox"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
 
         </LinearLayout>
         <LinearLayout
@@ -144,14 +153,15 @@
                 android:src="@drawable/navmasmenu"
                 android:layout_weight="5"
                 />
-            <TextView
+            <Button
+                android:id="@+id/btn_MessMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masmenu"
-                android:layout_gravity="center"
-                android:layout_weight="19"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
+                android:text="@string/MessMenu"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
 
         </LinearLayout>
         <LinearLayout
@@ -166,16 +176,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/logout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="-2dp"
                 android:layout_weight="5"
                 />
+
             <TextView
+                android:id="@+id/tv_signout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign out"
-                android:layout_gravity="center"
-                android:layout_weight="15"
-                android:textSize="25sp"
-                android:textColor="@color/black"/>
+                android:text="sign Out"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+<!--            <Button-->
+<!--                android:id="@+id/btn_SignOut"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Sign Out"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                />-->
+
+
 
         </LinearLayout>
 
