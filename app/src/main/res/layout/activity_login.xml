@@ -52,12 +52,23 @@
                     android:layout_marginHorizontal="17dp"
                     android:layout_marginTop="50dp"
                     app:startIconDrawable="@drawable/account"
+
+                    app:boxStrokeColor="@color/red"
+                    app:boxCornerRadiusTopStart="15dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:startIconTint="@color/black"
+                    app:endIconTint="@color/black"
+                    android:textColorHint="#818181"
+
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:textColor="@color/black"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
@@ -69,17 +80,30 @@
                     app:startIconDrawable="@drawable/ic_baseline_lock_24"
                     android:layout_marginHorizontal="17dp"
                     android:layout_marginTop="20dp"
+
+                    app:boxStrokeColor="@color/red"
+                    app:boxCornerRadiusTopStart="15dp"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusTopEnd="15dp"
+                    app:boxCornerRadiusBottomStart="15dp"
+                    app:startIconTint="@color/black"
+                    app:endIconTint="@color/black"
+                    android:textColorHint="#818181"
+
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="300dp"
                         android:inputType="text"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
+                    android:id="@+id/forgot_pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/forgot_pass"
@@ -100,6 +124,7 @@
                     android:layout_marginTop="55dp"
                     android:layout_gravity="center"
                     app:cornerRadius="10dp"
+                    android:backgroundTint="#BE1717"
                     android:fontFamily="sans-serif-medium" />
 
 
