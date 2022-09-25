@@ -21,10 +21,19 @@
     <string name="MessMenu">Mess Menu</string>
     <string name="my_dashboard">My Dashboard</string>
     <string name="login">Login</string>
+    <string name="logout">Log Out</string>
     <string name="forgot_pass">Forgot password?</string>
     <string name="Password">Password</string>
     <string name="Username">Username</string>
     <string name="WelcomeBack">Welcome Back !</string>
     <string name="fp1_text">Don’t Worry \nEnter your email and we’ll \nsend you a verification code to \nreset your password.</string>
     <string name="profile">Profile</string>
+    <string name="title">Title</string>
+    <string name="discription">Description</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="room_no">Room No</string>
+    <string name="name">First Name</string>
+    <string name="complain">Complain</string>
+    <string name="email">Enter Your Email</string>
 </resources>

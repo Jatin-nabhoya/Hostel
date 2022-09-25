@@ -1,8 +1,5 @@
 package com.hfad.hostel;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,9 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity {
-    public Button login;
+    Button login;
     TextView forgot_pass;
-    public TextInputLayout username, password;
+    TextInputLayout username, password;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
     android.app.ProgressDialog ProgressDialog;
@@ -31,59 +31,75 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        forgot_pass=findViewById(R.id.forgot_pass);
+        forgot_pass = findViewById(R.id.forgot_pass);
         login = findViewById(R.id.btn_login);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
 
-        mAuth=FirebaseAuth.getInstance();
-        mUser=mAuth.getCurrentUser();
-        ProgressDialog=new ProgressDialog(this);
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
+        ProgressDialog = new ProgressDialog(this);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                performLogin();
-                validateusername();
-                validatepassword();
+            public void onClick(View view) {
+                String val=username.getEditText().getText().toString().trim();
+                String val1=password.getEditText().getText().toString().trim();
+
+                if(val.equals("")){
+                    username.setError("Field can't be empty");
+                    getCurrentFocus();
+                }
+                else if(val1.equals("")){
+                    password.setError("Field can't be empty");
+                    getCurrentFocus();
+                }
+                else{
+                    username.setError(null);
+                    username.setErrorEnabled(false);
+                    password.setError(null);
+                    password.setErrorEnabled(false);
+                    performLogin();
+                }
+
             }
         });
 
         forgot_pass.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(login.this,forgotPassword_1.class);
+                Intent i=new Intent(login.this,forgotPassword_1.class);
                 startActivity(i);
+                finish();
+
             }
+
+
         });
     }
+//    private void forgotPassword(){
+//         String user=username.getEditText().getText().toString().trim();
+//
+//                mAuth.sendPasswordResetEmail(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<Void> task) {
+//                        if (task.isSuccessful()) {
+//                            Toast.makeText(login.this, "Done Sent.", Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(login.this, "Error Occurred.", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//                }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//
+//                        Toast.makeText(login.this, e.toString(), Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//
+//            }
 
-    private Boolean validateusername(){
-        String val=username.getEditText().getText().toString();
-        if(val==null){
-            username.setError("Field can't be empty");
-            return false;
-        }
-        else{
-            username.setError(null);
-            username.setErrorEnabled(false);
-            return true;
-        }
-    }
-
-    private Boolean validatepassword(){
-        String val=password.getEditText().getText().toString();
-        if(val==null){
-            username.setError("Field can't be empty");
-            return false;
-        }
-        else{
-            password.setError(null);
-            password.setErrorEnabled(false);
-            return true;
-        }
-    }
 
     private void performLogin() {
         String user=username.getEditText().getText().toString();
@@ -99,8 +115,11 @@ public class login extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Intent i=new Intent(login.this,Dashboard.class);
                     i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    username.setErrorEnabled(false);
+                    password.setErrorEnabled(false);
                     startActivity(i);
                     Toast.makeText(login.this,"Login Successfully.",Toast.LENGTH_SHORT).show();
+                    ProgressDialog.hide();
                 }
                 else{
                     Toast.makeText(login.this,""+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -114,7 +133,7 @@ public class login extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
+        // Check if user is signed in (non-null)
         if(mUser != null) {
             // User is signed in
             Intent i = new Intent(login.this, Dashboard.class);
@@ -129,6 +148,3 @@ public class login extends AppCompatActivity {
     }
 }
 
-
-    //Sign out user
-//FirebaseAuth.getInstance().signOut();
