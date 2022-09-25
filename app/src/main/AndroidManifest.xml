@@ -17,6 +17,7 @@
         android:theme="@style/MyTheme.Hostel"
         tools:targetApi="31">
         <activity
+
             android:name=".GYM"
             android:exported="false" />
         <activity
@@ -24,6 +25,15 @@
             android:exported="false" />
         <activity
             android:name=".SOAC"
+            android:exported="false" />
+        <activity
+            android:name=".Complain_Box"
+            android:exported="false" />
+        <activity
+            android:name=".add_anno_lay"
+            android:exported="false" />
+        <activity
+            android:name=".announcement"
             android:exported="false" />
         <activity
             android:name=".forgotPassword_1"
@@ -42,9 +52,9 @@
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="false" >
-            
-        </activity>
+
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />

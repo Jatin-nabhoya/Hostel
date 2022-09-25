@@ -21,6 +21,7 @@
 
     //Forgot Pwd Activity
     <string name="login">Login</string>
+    <string name="logout">Log Out</string>
     <string name="forgot_pass">Forgot password?</string>
     <string name="Password">Password</string>
     <string name="Username">Username</string>
@@ -70,4 +71,14 @@
     <string name="u25cf_follow_the_timing_compulsory_and_place_back_the_equipment_in_its_rack">● Follow the timing compulsory and place back the equipment in its rack.</string>
     <string name="u25cf_follow_the_time_slot_mentioned_in_your_from_only_otherwise_you_will_be_disqualified">● Follow the time slot mentioned in your from only otherwise you will be disqualified.</string>
 
+
+    <string name="profile">Profile</string>
+    <string name="title">Title</string>
+    <string name="discription">Description</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="room_no">Room No</string>
+    <string name="name">First Name</string>
+    <string name="complain">Complain</string>
+    <string name="email">Enter Your Email</string>
 </resources>

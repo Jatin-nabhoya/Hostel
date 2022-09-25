@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/sheet">
@@ -42,6 +43,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
+            android:id="@+id/bts_ll_gatepass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -55,17 +57,26 @@
                 android:layout_weight="5"
                 android:layout_marginStart="-4dp"
                 />
-            <Button
-                android:id="@+id/btn_GatePass"
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/gatepass"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                />
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+<!--            <Button-->
+<!--                android:id="@+id/btn_GatePass"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/gatepass"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                />-->
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/bts_ll_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -79,18 +90,17 @@
                 android:layout_weight="4"
                 android:layout_marginStart="-4dp"
                 />
-            <Button
-                android:id="@+id/btn_Gallery"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/gallery"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                />
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/bts_ll_announcement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -104,18 +114,17 @@
                 android:layout_weight="6"
                 android:layout_marginStart="-3dp"
                 />
-            <Button
-                android:id="@+id/btn_Announcement"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/announcement"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                />
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/bts_ll_cb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -129,8 +138,7 @@
                 android:layout_weight="5"
                 android:layout_marginStart="2dp"
                 />
-            <Button
-                android:id="@+id/btn_ComplaintBox"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Room_Maintence_box"
@@ -139,8 +147,10 @@
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 />
 
+
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/bts_ll_messmenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -153,18 +163,17 @@
                 android:src="@drawable/navmasmenu"
                 android:layout_weight="5"
                 />
-            <Button
-                android:id="@+id/btn_MessMenu"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/MessMenu"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                />
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -177,26 +186,17 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/logout"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="-2dp"
+                android:layout_marginStart="3dp"
                 android:layout_weight="5"
                 />
 
             <TextView
-                android:id="@+id/tv_signout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sign Out"
-                android:layout_marginTop="10dp"
-                android:textSize="20sp"/>
-<!--            <Button-->
-<!--                android:id="@+id/btn_SignOut"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Sign Out"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textColor="@color/black"-->
-<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
-<!--                />-->
+                android:text="@string/logout"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
 
 
 
