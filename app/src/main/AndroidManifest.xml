@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.hfad.hostel">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,19 +17,20 @@
         android:theme="@style/MyTheme.Hostel"
         tools:targetApi="31">
         <activity
+            android:name=".GYM"
+            android:exported="false" />
+        <activity
+            android:name=".SOAC_Club_Info"
+            android:exported="false" />
+        <activity
+            android:name=".SOAC"
+            android:exported="false" />
+        <activity
             android:name=".forgotPassword_1"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".login"
-            android:exported="true" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true">
 
         </activity>
         <activity
@@ -37,7 +38,12 @@
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="false">
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

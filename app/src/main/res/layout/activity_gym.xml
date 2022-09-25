@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".GYM"
+android:background="@drawable/bgphoto"
+android:orientation="vertical">
+<include
+    layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/black"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#20ffffff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="@color/red">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/faculty_advisor"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:text="@string/bhavin_kaneria"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/contact_us"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/ic_call" />
+
+                        <ImageView
+                            android:id="@+id/whatsapp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/ic_whatsapp" />
+
+                        <ImageView
+                            android:id="@+id/mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/ic_mail" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:text="@string/gym_timings"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <!--                    <TableLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:stretchColumns="1,2"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        android:layout_marginStart="4dp"-->
+                    <!--                        android:layout_marginEnd="4dp"-->
+                    <!--                        android:background="#FFECEC">-->
+
+                    <!--                        <TableRow-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:weightSum="10"-->
+                    <!--                            android:gravity="center">-->
+                    <!--                            <TextView-->
+                    <!--                                android:text="Time slots"-->
+                    <!--                                android:textSize="20sp"-->
+                    <!--                                android:textStyle="bold"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:layout_column="1"-->
+                    <!--                                android:layout_weight="6"-->
+                    <!--                                android:gravity="center"/>-->
+                    <!--                            <TextView-->
+                    <!--                                android:text="Available for"-->
+                    <!--                                android:textSize="20sp"-->
+                    <!--                                android:textStyle="bold"-->
+                    <!--                                android:gravity="center"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:layout_column="1"-->
+                    <!--                                android:layout_weight="4"/>-->
+                    <!--                        </TableRow>-->
+
+                    <!--                            <TableRow-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:gravity="center">-->
+                    <!--                                <TextView-->
+                    <!--                                    android:text="Morning Slot : \n6:00AM to 7:00AM \n\n Slot 1: 2:30 PM to 3:15 PM \n\nSlot 2: 3:15 PM to 4:00 PM"-->
+                    <!--                                    android:textSize="17sp"-->
+                    <!--                                    android:gravity="center"-->
+                    <!--                                    android:textColor="@color/black"-->
+                    <!--                                    android:layout_column="1"/>-->
+                    <!--                                <TextView-->
+                    <!--                                    android:text="Boys and \nMale staff"-->
+                    <!--                                    android:textSize="17sp"-->
+                    <!--                                    android:gravity="center"-->
+                    <!--                                    android:textColor="@color/black"-->
+                    <!--                                    android:layout_column="1"/>-->
+                    <!--                            </TableRow>-->
+
+                    <!--                        <TableRow-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:gravity="center">-->
+                    <!--                            <TextView-->
+                    <!--                                android:text="Slot 3: 4:00 PM to 5:00 PM"-->
+                    <!--                                android:textSize="17sp"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:layout_column="1"-->
+                    <!--                                android:layout_weight="6"-->
+                    <!--                                android:gravity="center" />-->
+                    <!--                            <TextView-->
+                    <!--                                android:text="Girls and \nFemale staff"-->
+                    <!--                                android:textSize="17sp"-->
+
+                    <!--                                android:gravity="center"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:layout_column="1"-->
+                    <!--                                android:layout_weight="4"/>-->
+                    <!--                        </TableRow>-->
+
+                    <!--                        <TableRow-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:gravity="center">-->
+                    <!--                            <TextView-->
+                    <!--                                android:text="Slot 4: 5:00 PM to 5:45 PM \n\nSlot 5: 5:45 PM to 6:30 PM \n\n\nGym Will be closed At 6:30 PM"-->
+                    <!--                                android:textSize="17sp"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:layout_column="1"-->
+                    <!--                                android:layout_weight="6"-->
+                    <!--                                android:gravity="center"/>-->
+                    <!--                            <TextView-->
+                    <!--                                android:text="Boys and \nMale staff"-->
+                    <!--                                android:textSize="17sp"-->
+
+                    <!--                                android:gravity="center"-->
+                    <!--                                android:textColor="@color/black"-->
+                    <!--                                android:layout_column="1"-->
+                    <!--                                android:layout_weight="4"/>-->
+                    <!--                        </TableRow>-->
+                    <!--                    </TableLayout>-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/gym_time_table" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:text="@string/gym_fees_notice"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/gym_fees" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:text="@string/rules"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_marginBottom="3dp"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:text="@string/u25cf_if_anyone_doing_gym_without_paying_fees_than_he_is_restricted_from_the_gym_permanently"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/u25cf_form_fill_up_date_to_join_the_gym_is_between_the_first_5_days_of_the_any_month"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/u25cf_remove_your_shoes_outside_the_gym"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/u25cf_boys_girls_and_staff_compulsory_fill_the_form_at_the_time_of_joining_the_gym"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/u25cf_login_entry_is_required_when_you_enter_inside_the_gym"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/u25cf_follow_the_timing_compulsory_and_place_back_the_equipment_in_its_rack"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:singleLine="false"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/u25cf_follow_the_time_slot_mentioned_in_your_from_only_otherwise_you_will_be_disqualified"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                    </LinearLayout>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_gym_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apply_for_gym_membership"
+                        android:textSize="20.59sp"
+                        android:textColor="@color/white"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="20dp"
+
+                        android:layout_gravity="center"
+                        app:cornerRadius="10dp"
+                        android:backgroundTint="#BE1717"
+                        android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -133,7 +133,7 @@
                 android:id="@+id/btn_ComplaintBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ComplaintBox"
+                android:text="@string/Room_Maintence_box"
                 android:textSize="20sp"
                 android:textColor="@color/black"
                 style="@style/Widget.MaterialComponents.Button.TextButton"

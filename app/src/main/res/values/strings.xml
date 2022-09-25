@@ -16,15 +16,58 @@
     <string name="GatePass">Gate Pass</string>
     <string name="gallery">Gallery</string>
     <string name="announcement">Announcement</string>
-    <string name="ComplaintBox">Complaint Box</string>
+    <string name="Room_Maintence_box">Room Maintence box</string>
     <string name="alert">Alert</string>
-    <string name="MessMenu">Mess Menu</string>
-    <string name="my_dashboard">My Dashboard</string>
+
+    //Forgot Pwd Activity
     <string name="login">Login</string>
     <string name="forgot_pass">Forgot password?</string>
     <string name="Password">Password</string>
     <string name="Username">Username</string>
     <string name="WelcomeBack">Welcome Back !</string>
     <string name="fp1_text">Don’t Worry \nEnter your email and we’ll \nsend you a verification code to \nreset your password.</string>
-    <string name="profile">Profile</string>
+
+    // Dashboard
+    <string name="MessMenu">Mess Menu</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="gym">GYM</string>
+    <string name="soac">SOAC</string>
+    <string name="committee">committee</string>
+
+    //SOAC club dashboard
+    <string name="rku_killer_smashers">RKU KILLER SMASHERS</string>
+    <string name="zero_violation_club">Zero Violation Club</string>
+    <string name="rku_rangers_football_club">RKU Rangers Football Club</string>
+    <string name="the_king_of_64">The King of 64</string>
+    <string name="badminton">badminton</string>
+    <string name="cricket">Cricket</string>
+    <string name="bumblebeez">Bumblebeez</string>
+    <string name="soul_of_music_club">soul of Music Club</string>
+
+    //club info activity
+
+    <string name="organization_name">Organization Name :</string>
+    <string name="organization_type">Organization Type\t:</string>
+    <string name="organization_objectives">Organization \nObjectives :</string>
+    <string name="students_committee_members">Students \nCommittee \nmembers :</string>
+    <string name="faculty_advisor">Faculty Advisor :</string>
+    <string name="membership_fees_and_criteria_to_join_organization">Membership \nfees and \nCriteria to Join \norganization :</string>
+    <string name="registration_link">Registration Link :</string>
+    <string name="soac_club_name">SOAC Club Name</string>
+
+    //GYM
+    <string name="contact_us">Contact Us :</string>
+    <string name="apply_for_gym_membership">Apply For Gym membership</string>
+    <string name="bhavin_kaneria">Bhavin Kaneria</string>
+    <string name="gym_timings">GYM TIMINGS</string>
+    <string name="gym_fees_notice">GYM Fees Notice</string>
+    <string name="rules">RULES</string>
+    <string name="u25cf_if_anyone_doing_gym_without_paying_fees_than_he_is_restricted_from_the_gym_permanently">● If Anyone doing gym without paying fees than he is restricted from the gym permanently.</string>
+    <string name="u25cf_form_fill_up_date_to_join_the_gym_is_between_the_first_5_days_of_the_any_month">● form Fill-up date to Join the gym is between the first 5 days of the any month.</string>
+    <string name="u25cf_remove_your_shoes_outside_the_gym">● remove your shoes outside the gym</string>
+    <string name="u25cf_boys_girls_and_staff_compulsory_fill_the_form_at_the_time_of_joining_the_gym">● Boys , Girls and staff Compulsory fill the form at the time of joining the gym.</string>
+    <string name="u25cf_login_entry_is_required_when_you_enter_inside_the_gym">● Login entry is required when you enter inside the gym.</string>
+    <string name="u25cf_follow_the_timing_compulsory_and_place_back_the_equipment_in_its_rack">● Follow the timing compulsory and place back the equipment in its rack.</string>
+    <string name="u25cf_follow_the_time_slot_mentioned_in_your_from_only_otherwise_you_will_be_disqualified">● Follow the time slot mentioned in your from only otherwise you will be disqualified.</string>
+
 </resources>

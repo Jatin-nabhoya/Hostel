@@ -35,7 +35,7 @@
                 android:gravity="center">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Profile"
+                    android:id="@+id/gym"
                     android:layout_width="150dp"
                     android:layout_height="175dp"
                     app:cardElevation="50dp"
@@ -54,14 +54,15 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_gravity="center"
-                            android:background="@drawable/profile"/>
+                            android:background="@drawable/gym"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/profile"
+                            android:text="@string/gym"
                             android:layout_marginTop="5dp"
-                            android:layout_gravity="center"                             android:textSize="18sp"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
                             android:textColor="@color/black"/>
 
 
@@ -71,7 +72,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/gatepass"
+                    android:id="@+id/SOAC"
                     android:layout_width="150dp"
                     android:layout_height="175dp"
                     app:cardCornerRadius="15dp"
@@ -89,14 +90,15 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_gravity="center"
-                            android:background="@drawable/gatepass"/>
+                            android:background="@drawable/sports"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/GatePass"
+                            android:text="@string/soac"
                             android:layout_marginTop="5dp"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
                             android:textColor="@color/black"/>
 
 
@@ -134,7 +136,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/announcement"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             android:gravity="center"
                             android:textColor="@color/black"/>
 
@@ -161,13 +163,13 @@
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_gravity="center"
-                            android:background="@drawable/gallery"/>
+                            android:background="@drawable/committe"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/gallery"
-                            android:textSize="18sp"
+                            android:text="@string/committee"
+                            android:textSize="14sp"
                             android:layout_gravity="center"
                             android:textColor="@color/black"/>
 
@@ -208,8 +210,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/ComplaintBox"
-                            android:textSize="18sp"
+                            android:text="@string/Room_Maintence_box"
+                            android:textSize="14sp"
                             android:gravity="center"
                             android:textColor="@color/black"/>
 
@@ -242,7 +244,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/MessMenu"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             android:gravity="center"
                             android:textColor="@color/black"/>
                     </LinearLayout>
