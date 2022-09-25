@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#ffffff"
+tools:context=".SOAC">
+
+
+<include layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Profile"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="15dp"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/vollyball"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rku_killer_smashers"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gatepass"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/basketball"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero_violation_club"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/football"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rku_rangers_football_club"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/chess"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_king_of_64"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                app:cardElevation="50dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/badminton"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/badminton"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                app:cardElevation="50dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cricket"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cricket"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                app:cardElevation="50dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dance"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bumblebeez"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp"
+                app:cardElevation="50dp"
+                app:cardBackgroundColor="#D9D9D9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/music"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/soul_of_music_club"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</GridLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

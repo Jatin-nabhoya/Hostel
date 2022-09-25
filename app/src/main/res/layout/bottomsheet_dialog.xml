@@ -141,10 +141,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ComplaintBox"
-                android:textSize="25sp"
-                android:layout_gravity="center"
-                android:textColor="@color/black"/>
+                android:text="@string/Room_Maintence_box"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                />
+
 
         </LinearLayout>
         <LinearLayout

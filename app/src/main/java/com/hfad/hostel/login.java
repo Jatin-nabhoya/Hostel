@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class login extends AppCompatActivity {
     TextInputLayout username, password;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+    ProgressBar progressBar;
     android.app.ProgressDialog ProgressDialog;
 
     @Override
@@ -35,6 +37,7 @@ public class login extends AppCompatActivity {
         login = findViewById(R.id.btn_login);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
+        progressBar =findViewById(R.id.progressBar);
 
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
@@ -104,10 +107,10 @@ public class login extends AppCompatActivity {
     private void performLogin() {
         String user=username.getEditText().getText().toString();
         String pass=password.getEditText().getText().toString();
-        ProgressDialog.setMessage("Please wait while login...");
-        ProgressDialog.setTitle("Login");
-        ProgressDialog.setCanceledOnTouchOutside(false);
-        ProgressDialog.show();
+//        ProgressDialog.setMessage("Please wait while login...");
+//        ProgressDialog.setTitle("Login");
+//        ProgressDialog.setCanceledOnTouchOutside(false);
+//        ProgressDialog.show();
 
         mAuth.signInWithEmailAndPassword(user,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -123,6 +126,7 @@ public class login extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(login.this,""+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
                 }
 
             }

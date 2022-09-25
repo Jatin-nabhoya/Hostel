@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity {
     ImageView Profile;
+    CardView SOAC,gym;
     CardView gatepass,cv_announcement,cv_ComplainBox;
     Toolbar toolbar;
     TextView txttoolbar,signout;
@@ -34,6 +35,11 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         Profile=findViewById(R.id.Profile);
+        SOAC=findViewById(R.id.SOAC);
+        gym=findViewById(R.id.gym);
+
+        signout=findViewById(R.id.tv_signout);
+
         gatepass=findViewById(R.id.gatepass);
         cv_announcement=findViewById(R.id.cv_announcement);
         cv_ComplainBox=findViewById(R.id.cv_ComplainBox);
@@ -53,13 +59,20 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-       gatepass.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Intent i =new Intent(Dashboard.this,Gatepass.class);
-               startActivity(i);
-           }
-       });
+        SOAC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(Dashboard.this,SOAC.class);
+                startActivity(i);
+            }
+        });
+        gym.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(Dashboard.this,GYM.class);
+                startActivity(i);
+            }
+        });
 
        cv_announcement.setOnClickListener(new View.OnClickListener() {
            @Override
