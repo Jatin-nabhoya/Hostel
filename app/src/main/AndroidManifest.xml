@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.hfad.hostel">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,28 +17,32 @@
         android:theme="@style/MyTheme.Hostel"
         tools:targetApi="31">
         <activity
+            android:name=".Complain_Box"
+            android:exported="false" />
+        <activity
+            android:name=".add_anno_lay"
+            android:exported="false" />
+        <activity
+            android:name=".announcement"
+            android:exported="false" />
+        <activity
             android:name=".forgotPassword_1"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".login"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".Gatepass"
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
