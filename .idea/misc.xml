@@ -21,18 +21,22 @@
         <entry key="..\:/Hostel/app/src/main/res/drawable/edittextbackground.xml" value="0.1" />
         <entry key="..\:/Hostel/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.252" />
         <entry key="..\:/Hostel/app/src/main/res/drawable/ic_email.xml" value="0.2385" />
-        <entry key="..\:/Hostel/app/src/main/res/layout/activity_add_anno_lay.xml" value="0.144" />
+        <entry key="..\:/Hostel/app/src/main/res/drawable/ic_user2.xml" value="0.2505" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/activity_add_anno_lay.xml" value="0.152" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_announcement.xml" value="0.21487603305785125" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_complain_box.xml" value="0.136" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_forgot_password1.xml" value="0.23114035087719298" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_forgot_password2.xml" value="0.1265625" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_gatepass.xml" value="0.1265625" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/activity_gym.xml" value="0.17335526315789473" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_login.xml" value="0.20742753623188406" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_main.xml" value="0.23114035087719298" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/activity_soac.xml" value="0.17335526315789473" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/activity_soac_club_info.xml" value="0.17335526315789473" />
         <entry key="..\:/Hostel/app/src/main/res/layout/add_complain_lay.xml" value="0.17335526315789473" />
         <entry key="..\:/Hostel/app/src/main/res/layout/announcement_row.xml" value="0.23026315789473684" />
-        <entry key="..\:/Hostel/app/src/main/res/layout/bottomsheet_dialog.xml" value="0.4" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/bottomsheet_dialog.xml" value="0.176" />
         <entry key="..\:/Hostel/app/src/main/res/layout/complain_row.xml" value="0.17335526315789473" />
         <entry key="..\:/Hostel/app/src/main/res/layout/edittext_background.xml" value="0.14719945355191258" />
         <entry key="..\:/Hostel/app/src/main/res/layout/toolbar.xml" value="0.10400000000000001" />

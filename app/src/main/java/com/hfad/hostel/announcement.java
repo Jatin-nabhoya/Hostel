@@ -55,6 +55,16 @@ public class announcement extends AppCompatActivity {
         recyclerView.setAdapter(ann_adapter);
         recyclerView.scrollToPosition(list.size()-1);
 
+//        btn_add_announcement.setVisibility(View.GONE);
+//
+//        if(mUser.getEmail().equals("mmangukiya927@rku.ac.in")){
+//            btn_add_announcement.setVisibility(View.VISIBLE);
+//        }else{
+//            btn_add_announcement.setVisibility(View.GONE);
+//        }
+
+
+
 
 
         reference.addValueEventListener(new ValueEventListener() {
@@ -99,6 +109,8 @@ public class announcement extends AppCompatActivity {
                         if(!title.equals("") && !disc.equals("")){
                             HelperClass helperClass=new HelperClass(title,disc);
                             reference.child(title).setValue(helperClass);
+                            edt_title.setError(null);
+                            edt_disc.setError(null);
                             dialog.dismiss();
 
                         }else{

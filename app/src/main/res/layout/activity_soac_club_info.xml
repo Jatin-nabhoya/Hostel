@@ -40,6 +40,7 @@ android:orientation="vertical">
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp">
                 <TextView
+                    android:id="@+id/tv_cname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/soac_club_name"
@@ -81,6 +82,7 @@ android:orientation="vertical">
                             android:layout_weight="2"
                             android:textColor="@color/black"/>
                         <TextView
+                            android:id="@+id/tv_oName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/organization_name"
@@ -101,9 +103,10 @@ android:orientation="vertical">
                             android:layout_weight="2"
                             android:textColor="@color/black"/>
                         <TextView
+                            android:id="@+id/tv_oType"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/organization_name"
+                            android:text="@string/organization_type"
                             android:layout_weight="8"
                             android:textColor="@color/black"/>
                     </LinearLayout>
@@ -122,9 +125,10 @@ android:orientation="vertical">
                             android:textColor="@color/black"
                             android:layout_weight="2"/>
                         <TextView
+                            android:id="@+id/tv_oObjective"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/organization_name"
+                            android:text="@string/organization_objectives"
                             android:textColor="@color/black"
                             android:layout_weight="8"/>
                     </LinearLayout>
@@ -143,9 +147,10 @@ android:orientation="vertical">
                             android:textColor="@color/black"
                             android:layout_weight="2"/>
                         <TextView
+                            android:id="@+id/tv_oMember"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/organization_name"
+                            android:text="@string/students_committee_members"
                             android:textColor="@color/black"
                             android:layout_weight="8"/>
                     </LinearLayout>
@@ -164,9 +169,10 @@ android:orientation="vertical">
                             android:textColor="@color/black"
                             android:layout_weight="2"/>
                         <TextView
+                            android:id="@+id/tv_oFAdviser"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/organization_name"
+                            android:text="@string/faculty_advisor"
                             android:textColor="@color/black"
                             android:layout_weight="8"/>
                     </LinearLayout>
@@ -185,9 +191,10 @@ android:orientation="vertical">
                             android:textColor="@color/black"
                             android:layout_weight="2"/>
                         <TextView
+                            android:id="@+id/tv_oFees"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/organization_name"
+                            android:text="@string/membership_fees_and_criteria_to_join_organization"
                             android:textColor="@color/black"
                             android:layout_weight="8"/>
                     </LinearLayout>
@@ -207,9 +214,10 @@ android:orientation="vertical">
                             android:textColor="@color/black"
                             android:layout_weight="2"/>
                         <TextView
+                            android:id="@+id/tv_oRLink"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/organization_name"
+                            android:text="@string/registration_link"
                             android:textColor="@color/black"
                             android:layout_weight="8"/>
                     </LinearLayout>

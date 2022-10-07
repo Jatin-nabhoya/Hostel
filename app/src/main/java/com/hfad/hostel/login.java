@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity {
     Button login;
+
     TextView forgot_pass;
     TextInputLayout username, password;
     FirebaseAuth mAuth;
@@ -37,11 +38,16 @@ public class login extends AppCompatActivity {
         login = findViewById(R.id.btn_login);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
+
         progressBar =findViewById(R.id.progressBar);
 
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
         ProgressDialog = new ProgressDialog(this);
+
+
+
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,14 +55,19 @@ public class login extends AppCompatActivity {
                 String val=username.getEditText().getText().toString().trim();
                 String val1=password.getEditText().getText().toString().trim();
 
-                if(val.equals("")){
+                
+
+                if(val.equals("") && val1.equals("")){
                     username.setError("Field can't be empty");
-                    getCurrentFocus();
+                    password.setError("Field can't be empty");
+                }
+                else if(val.equals("")){
+                    username.setError("Field can't be empty");
                 }
                 else if(val1.equals("")){
                     password.setError("Field can't be empty");
-                    getCurrentFocus();
                 }
+
                 else{
                     username.setError(null);
                     username.setErrorEnabled(false);
@@ -117,10 +128,8 @@ public class login extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Intent i=new Intent(login.this,Dashboard.class);
-                    i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                    username.setErrorEnabled(false);
-                    password.setErrorEnabled(false);
                     startActivity(i);
+                    finish();
                     Toast.makeText(login.this,"Login Successfully.",Toast.LENGTH_SHORT).show();
                     ProgressDialog.hide();
                 }

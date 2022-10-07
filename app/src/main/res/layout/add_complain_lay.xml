@@ -16,37 +16,113 @@
         android:orientation="vertical"
         android:layout_margin="5dp">
 
-        <EditText
-            android:id="@+id/edt_fname"
+<!--        <EditText-->
+<!--            android:id="@+id/edt_fname"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dp"-->
+<!--            android:background="@drawable/edittext_background"-->
+<!--            android:hint="@string/name"-->
+<!--            android:inputType="text"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edt_roomNo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/room_no"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:background="@drawable/edittext_background"-->
+<!--            android:inputType="text"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edt_complain"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:gravity="start"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:background="@drawable/edittext_background"-->
+<!--            android:scrollbarAlwaysDrawVerticalTrack="true"-->
+<!--            android:hint="@string/complain"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            />-->
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:background="@drawable/edittext_background"
             android:hint="@string/name"
-            android:inputType="text"/>
+            app:endIconMode="clear_text"
+            android:layout_marginTop="5dp"
+            app:boxStrokeColor="@color/red"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:startIconTint="@color/black"
+            app:endIconTint="@color/black"
+            android:textColorHint="#818181"
 
-        <EditText
-            android:id="@+id/edt_roomNo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/room_no"
-            android:layout_marginTop="10dp"
-            android:padding="5dp"
-            android:background="@drawable/edittext_background"
-            android:inputType="text"/>
+            app:endIconMode="clear_text"
+            android:layout_marginTop="5dp"
+            app:boxStrokeColor="@color/red"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:startIconTint="@color/black"
+            app:endIconTint="@color/black"
+            android:textColorHint="#818181"
 
-        <EditText
-            android:id="@+id/edt_complain"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_roomNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:gravity="start"
-            android:layout_marginTop="10dp"
-            android:padding="5dp"
-            android:background="@drawable/edittext_background"
-            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_height="wrap_content"
             android:hint="@string/complain"
-            android:inputType="textMultiLine"
-            />
+            app:endIconMode="clear_text"
+            android:layout_marginTop="5dp"
+            app:boxStrokeColor="@color/red"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:startIconTint="@color/black"
+            app:endIconTint="@color/black"
+            android:textColorHint="#818181"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_complain"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 

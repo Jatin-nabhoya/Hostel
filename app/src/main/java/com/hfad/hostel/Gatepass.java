@@ -1,12 +1,12 @@
 package com.hfad.hostel;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class Gatepass extends AppCompatActivity {
     ImageView ic_back ;
@@ -21,7 +21,7 @@ public class Gatepass extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         txttoolbar = findViewById(R.id.txt_toolbar);
 
-        txttoolbar.setText(R.string.gatepass);
+        txttoolbar.setText(R.string.GatePass);
 
         //toolbar back button
         ic_back = findViewById(R.id.ic_back);
