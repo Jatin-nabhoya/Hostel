@@ -35,7 +35,7 @@ tools:context=".SOAC">
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Profile"
+                android:id="@+id/soac_rku_killer_smashers"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardElevation="50dp"
@@ -113,6 +113,7 @@ tools:context=".SOAC">
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/soac_rku_rangers_football_club"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"

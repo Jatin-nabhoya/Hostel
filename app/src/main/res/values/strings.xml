@@ -3,7 +3,6 @@
     <string name="hostel">RKU HOSTEL</string>
     <string name="hostel_app">Hostel App</string>
     <string name="student">Student</string>
-    <string name="gatepass">Gate Pass</string>
     <string name="rku_Address">Bhavagar Highway , Kasturbadham , Rajkot. Mo :9909952030 /31</string>
     <string name="boy_girl_hostel">Boy / Girl Hostel</string>
     <string name="sr_no">Sr No :</string>
@@ -18,6 +17,8 @@
     <string name="announcement">Announcement</string>
     <string name="Room_Maintence_box">Room Maintence box</string>
     <string name="alert">Alert</string>
+    <string name="aboutus">About Us</string>
+    <string name="rule">Rules and Regulations</string>
 
     //Forgot Pwd Activity
     <string name="login">Login</string>
@@ -78,7 +79,7 @@
     <string name="add">Add</string>
     <string name="cancel">Cancel</string>
     <string name="room_no">Room No</string>
-    <string name="name">First Name</string>
+    <string name="name">Name</string>
     <string name="complain">Complain</string>
     <string name="email">Enter Your Email</string>
 </resources>

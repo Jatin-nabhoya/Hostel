@@ -19,6 +19,7 @@
             android:layout_marginTop="15dp"
             />
         <TextView
+            android:id="@+id/bts_tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Andrew"
@@ -26,6 +27,7 @@
             android:textStyle="bold"
             android:textColor="@color/black"/>
         <TextView
+            android:id="@+id/bts_tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="jandrew123@gmail.com"
@@ -43,7 +45,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/bts_ll_gatepass"
+            android:id="@+id/ll_aboutus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -61,7 +63,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gatepass"
+                android:text="@string/aboutus"
                 android:textSize="25sp"
                 android:layout_gravity="center"
                 android:textColor="@color/black"/>
@@ -76,7 +78,7 @@
 <!--                />-->
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/bts_ll_gallery"
+            android:id="@+id/ll_rules"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -88,90 +90,28 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/navgallery"
                 android:layout_weight="4"
-                android:layout_marginStart="-4dp"
+                android:layout_marginStart="15dp"
+
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/gallery"
+                android:text="@string/rule"
                 android:textSize="25sp"
+
                 android:layout_gravity="center"
                 android:textColor="@color/black"/>
 
         </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bts_ll_announcement"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="20"
-            android:layout_marginTop="15dp"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/navannouncement"
-                android:layout_weight="6"
-                android:layout_marginStart="-3dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/announcement"
-                android:textSize="25sp"
-                android:layout_gravity="center"
-                android:textColor="@color/black"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bts_ll_cb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="20"
-            android:layout_marginTop="15dp"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/navcomplainbox"
-                android:layout_weight="5"
-                android:layout_marginStart="2dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/Room_Maintence_box"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                />
+
+
+
+
 
 
         </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bts_ll_messmenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="24"
-            android:layout_marginTop="10dp"
-            >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/navmasmenu"
-                android:layout_weight="5"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/MessMenu"
-                android:textSize="25sp"
-                android:layout_gravity="center"
-                android:textColor="@color/black"/>
 
-        </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_logout"
             android:layout_width="match_parent"
@@ -195,6 +135,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/logout"
                 android:textSize="25sp"
+                android:layout_marginTop="5dp"
                 android:layout_gravity="center"
                 android:textColor="@color/black"/>
 
@@ -203,4 +144,3 @@
         </LinearLayout>
 
     </LinearLayout>
-</LinearLayout>
