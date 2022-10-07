@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Dashboard extends AppCompatActivity {
     ImageView Profile;
     CardView SOAC,gym;
-    CardView gatepass,cv_announcement,cv_ComplainBox;
+    CardView gatepass,cv_announcement,cv_ComplainBox,cv_messmenu;
     TextView txttoolbar;
     ImageView ic_back;
     FirebaseAuth mAuth;
@@ -34,9 +34,12 @@ public class Dashboard extends AppCompatActivity {
         gym=findViewById(R.id.gym);
 
 
-        gatepass=findViewById(R.id.gatepass);
+
+
+
         cv_announcement=findViewById(R.id.cv_announcement);
         cv_ComplainBox=findViewById(R.id.cv_ComplainBox);
+        cv_messmenu=findViewById(R.id.cv_messmenu);
         mAuth=FirebaseAuth.getInstance();
 
         txttoolbar = findViewById(R.id.txt_toolbar);
@@ -89,6 +92,14 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        cv_messmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(Dashboard.this,MessMenu.class);
+                startActivity(i);
+            }
+        });
+
 
 
 
@@ -111,13 +122,14 @@ public class Dashboard extends AppCompatActivity {
     }
 
     private void showBottomSheetDialog() {
-        TextView bts_email,bts_name;
+        TextView bts_email;
 
         final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
         bottomSheetDialog.setContentView(R.layout.bottomsheet_dialog);
 
         Intent i=getIntent();
         String username=i.getStringExtra("username");
+
 
         System.out.println("username"+username);
 

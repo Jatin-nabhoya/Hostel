@@ -21,7 +21,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity {
     Button login;
-
     TextView forgot_pass;
     TextInputLayout username, password;
     FirebaseAuth mAuth;
@@ -128,6 +127,7 @@ public class login extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Intent i=new Intent(login.this,Dashboard.class);
+                    i.putExtra("username",user);
                     startActivity(i);
                     finish();
                     Toast.makeText(login.this,"Login Successfully.",Toast.LENGTH_SHORT).show();

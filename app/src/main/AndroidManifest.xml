@@ -17,7 +17,9 @@
         android:theme="@style/MyTheme.Hostel"
         tools:targetApi="31">
         <activity
-
+            android:name=".MessMenu"
+            android:exported="false" />
+        <activity
             android:name=".GYM"
             android:exported="false" />
         <activity
@@ -41,7 +43,7 @@
         <activity
             android:name=".login"
             android:exported="true">
-              <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -52,9 +54,7 @@
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />

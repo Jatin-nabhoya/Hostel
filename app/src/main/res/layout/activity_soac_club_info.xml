@@ -217,6 +217,7 @@ android:orientation="vertical">
                             android:id="@+id/tv_oRLink"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:autoLink="web"
                             android:text="@string/registration_link"
                             android:textColor="@color/black"
                             android:layout_weight="8"/>

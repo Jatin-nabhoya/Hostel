@@ -38,7 +38,7 @@ tools:context=".SOAC">
                 android:id="@+id/soac_rku_killer_smashers"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 app:cardCornerRadius="15dp"
                 android:clickable="true"
                 android:layout_margin="10dp"
@@ -52,11 +52,12 @@ tools:context=".SOAC">
 
                     <ImageView
                         android:layout_width="150dp"
-                        android:layout_height="100dp"
+                        android:layout_height="106dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/vollyball"/>
+                        android:background="@drawable/vollyball" />
 
                     <TextView
+                        android:id="@+id/tv_smashers_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/rku_killer_smashers"
@@ -72,11 +73,11 @@ tools:context=".SOAC">
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/gatepass"
+                android:id="@+id/soac_zero_violation"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 android:layout_margin="10dp"
                 app:cardBackgroundColor="#D9D9D9">
 
@@ -93,6 +94,7 @@ tools:context=".SOAC">
                         android:background="@drawable/basketball"/>
 
                     <TextView
+                        android:id="@+id/tv_zero_violation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/zero_violation_club"
@@ -117,7 +119,7 @@ tools:context=".SOAC">
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 android:layout_margin="10dp"
                 app:cardBackgroundColor="#D9D9D9">
 
@@ -134,6 +136,7 @@ tools:context=".SOAC">
                         android:background="@drawable/football"/>
 
                     <TextView
+                        android:id="@+id/tv_football_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/rku_rangers_football_club"
@@ -148,9 +151,10 @@ tools:context=".SOAC">
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/soac_king_84"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 app:cardCornerRadius="15dp"
                 android:layout_margin="10dp"
                 app:cardBackgroundColor="#D9D9D9">
@@ -168,6 +172,7 @@ tools:context=".SOAC">
                         android:background="@drawable/chess"/>
 
                     <TextView
+                        android:id="@+id/tv_king_of_84"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/the_king_of_64"
@@ -190,11 +195,12 @@ tools:context=".SOAC">
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/soac_badminton"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"
                 android:layout_margin="10dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 app:cardBackgroundColor="#D9D9D9">
 
                 <LinearLayout
@@ -210,6 +216,7 @@ tools:context=".SOAC">
                         android:background="@drawable/badminton"/>
 
                     <TextView
+                        android:id="@+id/tv_badminton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/badminton"
@@ -223,11 +230,12 @@ tools:context=".SOAC">
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/soac_cricket"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"
                 android:layout_margin="10dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 app:cardBackgroundColor="#D9D9D9">
 
                 <LinearLayout
@@ -243,6 +251,7 @@ tools:context=".SOAC">
                         android:background="@drawable/cricket"/>
 
                     <TextView
+                        android:id="@+id/tv_cricket"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cricket"
@@ -260,11 +269,12 @@ tools:context=".SOAC">
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/soac_bumblebeez"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"
                 android:layout_margin="10dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 app:cardBackgroundColor="#D9D9D9">
 
                 <LinearLayout
@@ -280,6 +290,7 @@ tools:context=".SOAC">
                         android:background="@drawable/dance"/>
 
                     <TextView
+                        android:id="@+id/tv_bumblebeez"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/bumblebeez"
@@ -293,11 +304,12 @@ tools:context=".SOAC">
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/soac_music_club"
                 android:layout_width="150dp"
                 android:layout_height="175dp"
                 app:cardCornerRadius="15dp"
                 android:layout_margin="10dp"
-                app:cardElevation="50dp"
+                app:cardElevation="10dp"
                 app:cardBackgroundColor="#D9D9D9">
 
                 <LinearLayout
@@ -313,6 +325,7 @@ tools:context=".SOAC">
                         android:background="@drawable/music"/>
 
                     <TextView
+                        android:id="@+id/tv_soul_of_music_club"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/soul_of_music_club"
