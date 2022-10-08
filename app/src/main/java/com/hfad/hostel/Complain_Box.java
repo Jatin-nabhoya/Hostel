@@ -21,6 +21,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Complain_Box extends AppCompatActivity {
+//    ImageView ic_back ;
+//    Toolbar toolbar;
+//    TextView txttoolbar;
     FloatingActionButton btn_add_complain;
     Button btn_send,btn_cancel;
     EditText edt_roomNo,edt_name,edt_complain;
@@ -36,6 +39,8 @@ public class Complain_Box extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complain_box);
 
+//        toolbar =toolbar.findViewById(R.id.toolbar);
+//        txttoolbar = toolbar.findViewById(R.id.txt_toolbar);
         btn_add_complain=findViewById(R.id.btn_add_complain);
         recyclerView=findViewById(R.id.rv_ComplainBox);
 
@@ -46,6 +51,20 @@ public class Complain_Box extends AppCompatActivity {
         com_adapter =new Com_Adapter(list,this);
         recyclerView.setAdapter(com_adapter);
         recyclerView.scrollToPosition(list.size()-1);
+
+//        txttoolbar.setText(R.string.Room_Maintence_box);
+//
+//        //toolbar back button
+//        ic_back = findViewById(R.id.ic_back);
+//
+//        ic_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onBackPressed();
+//            }
+//        });
+
+
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

@@ -23,6 +23,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class announcement extends AppCompatActivity {
+//    ImageView ic_back ;
+//    Toolbar toolbar;
+//    TextView txttoolbar;
     FloatingActionButton btn_add_announcement;
     Button btn_send,btn_cancel;
     EditText edt_title, edt_disc;
@@ -41,6 +44,8 @@ public class announcement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announcement);
 
+//        toolbar= toolbar.findViewById(R.id.toolbar1);
+//        txttoolbar = toolbar.findViewById(R.id.txt_toolbar);
         btn_add_announcement=findViewById(R.id.btn_add_announcement);
         recyclerView=findViewById(R.id.rv_announcement);
         mAuth = FirebaseAuth.getInstance();
@@ -55,13 +60,17 @@ public class announcement extends AppCompatActivity {
         recyclerView.setAdapter(ann_adapter);
         recyclerView.scrollToPosition(list.size()-1);
 
-//        btn_add_announcement.setVisibility(View.GONE);
+//        txttoolbar.setText(R.string.announcement);
 //
-//        if(mUser.getEmail().equals("mmangukiya927@rku.ac.in")){
-//            btn_add_announcement.setVisibility(View.VISIBLE);
-//        }else{
-//            btn_add_announcement.setVisibility(View.GONE);
-//        }
+//        //toolbar back button
+//        ic_back = findViewById(R.id.ic_back);
+//
+//        ic_back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onBackPressed();
+//            }
+//        });
 
 
 

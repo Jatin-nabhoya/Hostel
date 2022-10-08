@@ -39,7 +39,7 @@
     //SOAC club dashboard
     <string name="rku_killer_smashers">RKU KILLER SMASHERS</string>
     <string name="zero_violation_club">Zero Violation Club</string>
-    <string name="rku_rangers_football_club">RKU Rangers Football Club</string>
+    <string name="rku_rangers_football_club">RKU RANGERS FOOTBALL</string>
     <string name="the_king_of_64">The King of 64</string>
     <string name="badminton">badminton</string>
     <string name="cricket">Cricket</string>
@@ -82,4 +82,13 @@
     <string name="name">Name</string>
     <string name="complain">Complain</string>
     <string name="email">Enter Your Email</string>
+    <string name="warning">* Only one room member can compalint from individual room.</string>
+    <array name="messmenu">
+        <item>International Boys Mess Menu</item>
+        <item>International Girls Mess Menu</item>
+        <item>Boys Mess Menu</item>
+        <item>Girls Mess Menu</item>
+
+    </array>
+    <string name="imageDes">Mess Menu Image</string>
 </resources>
