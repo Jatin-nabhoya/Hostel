@@ -1,17 +1,25 @@
 package com.hfad.hostel;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,15 +29,17 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class Complain_Box extends AppCompatActivity {
-//    ImageView ic_back ;
-//    Toolbar toolbar;
-//    TextView txttoolbar;
+    ImageView ic_back , Profile ;
+    Toolbar toolbar;
+    TextView txttoolbar;
     FloatingActionButton btn_add_complain;
     Button btn_send,btn_cancel;
     EditText edt_roomNo,edt_name,edt_complain;
     FirebaseDatabase rootNode=FirebaseDatabase.getInstance();
     DatabaseReference reference=rootNode.getReference("Complain");
     RecyclerView recyclerView;
+    FirebaseAuth mAuth;
+    FirebaseUser mUser;
 
     Com_Adapter com_adapter;
     ArrayList<Com_Model> list;
@@ -39,8 +49,8 @@ public class Complain_Box extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complain_box);
 
-//        toolbar =toolbar.findViewById(R.id.toolbar);
-//        txttoolbar = toolbar.findViewById(R.id.txt_toolbar);
+        txttoolbar = findViewById(R.id.txt_toolbar);
+        Profile = findViewById(R.id.Profile);
         btn_add_complain=findViewById(R.id.btn_add_complain);
         recyclerView=findViewById(R.id.rv_ComplainBox);
 
@@ -52,17 +62,27 @@ public class Complain_Box extends AppCompatActivity {
         recyclerView.setAdapter(com_adapter);
         recyclerView.scrollToPosition(list.size()-1);
 
-//        txttoolbar.setText(R.string.Room_Maintence_box);
-//
-//        //toolbar back button
-//        ic_back = findViewById(R.id.ic_back);
-//
-//        ic_back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                onBackPressed();
-//            }
-//        });
+        //toolbar
+        toolbar = findViewById(R.id.toolbar);
+        txttoolbar = findViewById(R.id.txt_toolbar);
+        txttoolbar.setText(R.string.Room_Maintence_box);
+        //toolbar back button
+        ic_back = findViewById(R.id.ic_back);
+
+        ic_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        //bottomshitdialog
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialog();
+            }
+        });
 
 
 
@@ -130,5 +150,53 @@ public class Complain_Box extends AppCompatActivity {
 
         });
 
+    }
+    private void showBottomSheetDialog () {
+        TextView bts_email;
+
+        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
+        bottomSheetDialog.setContentView(R.layout.bottomsheet_dialog);
+
+        Intent i = getIntent();
+        String username = i.getStringExtra("username");
+
+
+
+
+        bts_email = bottomSheetDialog.findViewById(R.id.bts_tv_email);
+        bts_email.setText(username);
+        LinearLayout logout = bottomSheetDialog.findViewById(R.id.ll_logout);
+        LinearLayout aboutus = bottomSheetDialog.findViewById(R.id.ll_aboutus);
+        LinearLayout rules = bottomSheetDialog.findViewById(R.id.ll_rules);
+
+        bottomSheetDialog.show();
+
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAuth.signOut();
+                Intent i = new Intent(Complain_Box.this, login.class);
+                startActivity(i);
+                bottomSheetDialog.dismiss();
+                finish();
+            }
+        });
+//        aboutus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i=new Intent(Dashboard.this,AboutUs.class);
+//                startActivity(i);
+//                bottomSheetDialog.dismiss();
+//
+//            }
+//        });
+//        rules.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i=new Intent(Dashboard.this,Rules_and_Regulation.class);
+//                startActivity(i);
+//            }
+//        });
     }
 }

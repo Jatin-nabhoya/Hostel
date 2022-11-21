@@ -48,6 +48,9 @@ public class Dashboard extends AppCompatActivity {
         ic_back = findViewById(R.id.ic_back);
         ic_back.setVisibility(View.GONE);
 
+        Intent i=getIntent();
+        String username=i.getStringExtra("username");
+
 
 
 
@@ -63,6 +66,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i =new Intent(Dashboard.this,SOAC.class);
+                i.putExtra("username",username);
                 startActivity(i);
 
             }
@@ -71,6 +75,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i =new Intent(Dashboard.this,GYM.class);
+                i.putExtra("username",username);
                 startActivity(i);
 
             }
@@ -80,6 +85,7 @@ public class Dashboard extends AppCompatActivity {
            @Override
            public void onClick(View view) {
                Intent i =new Intent(Dashboard.this,announcement.class);
+               i.putExtra("username",username);
                startActivity(i);
            }
        });
@@ -88,6 +94,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i =new Intent(Dashboard.this,Complain_Box.class);
+                i.putExtra("username",username);
                 startActivity(i);
             }
         });
@@ -96,6 +103,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(Dashboard.this,MessMenu.class);
+                i.putExtra("username",username);
                 startActivity(i);
             }
         });
@@ -129,9 +137,6 @@ public class Dashboard extends AppCompatActivity {
 
         Intent i=getIntent();
         String username=i.getStringExtra("username");
-
-
-        System.out.println("username"+username);
 
         bts_email=bottomSheetDialog.findViewById(R.id.bts_tv_email);
         bts_email.setText(username);

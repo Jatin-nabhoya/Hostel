@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:background="@color/cream"
     android:layout_height="match_parent"
-    tools:context=".announcement">
+    tools:context=".announcement"
+    >
 
     <include
-        android:id="@+id/toolbar1"
         layout="@layout/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
@@ -17,7 +17,7 @@
         android:id="@+id/rv_announcement"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar1"
+        android:layout_marginTop="70dp"
         android:padding="5dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -28,6 +28,7 @@
         android:src="@drawable/ic_baseline_add_24"
         android:contentDescription="@string/add"
         android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/red"
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="10dp"/>
 
