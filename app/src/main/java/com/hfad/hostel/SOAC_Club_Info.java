@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,12 +14,17 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SOAC_Club_Info extends AppCompatActivity {
-    ImageView ic_back ;
+    ImageView ic_back , Profile ;
+    FirebaseAuth mAuth;
+    FirebaseUser mUser;
     Toolbar toolbar;
     TextView txttoolbar;
     TextView tv_oName, tv_oType, tv_oObjective, tv_oMember, tv_oFAdviser, tv_oFees, tv_oRLink, tv_cname;
@@ -32,11 +38,15 @@ public class SOAC_Club_Info extends AppCompatActivity {
 
         Intent i = getIntent();
         String clubName = i.getStringExtra("clubName");
-//        String clubName1 = i.getStringExtra("RKU SMASHERS KILLER");
+
+
 
 
         toolbar = findViewById(R.id.toolbar);
+        Profile=findViewById(R.id.Profile);
         txttoolbar = findViewById(R.id.txt_toolbar);
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
         tv_oFAdviser = findViewById(R.id.tv_oFAdviser);
         tv_oFees = findViewById(R.id.tv_oFees);
         tv_oMember = findViewById(R.id.tv_oMember);
@@ -92,7 +102,61 @@ public class SOAC_Club_Info extends AppCompatActivity {
             }
 
         });
+        //bottomshitdialog
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showBottomSheetDialog();
+            }
+        });
+    }
+
+    private void showBottomSheetDialog () {
+        TextView bts_email;
+
+        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
+        bottomSheetDialog.setContentView(R.layout.bottomsheet_dialog);
+
+        Intent i = getIntent();
+        String username = i.getStringExtra("username");
 
 
+
+
+        bts_email = bottomSheetDialog.findViewById(R.id.bts_tv_email);
+        bts_email.setText(username);
+        LinearLayout logout = bottomSheetDialog.findViewById(R.id.ll_logout);
+        LinearLayout aboutus = bottomSheetDialog.findViewById(R.id.ll_aboutus);
+        LinearLayout rules = bottomSheetDialog.findViewById(R.id.ll_rules);
+
+        bottomSheetDialog.show();
+
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAuth.signOut();
+                Intent i = new Intent(SOAC_Club_Info.this, login.class);
+                startActivity(i);
+                bottomSheetDialog.dismiss();
+                finish();
+            }
+        });
+//        aboutus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i=new Intent(Dashboard.this,AboutUs.class);
+//                startActivity(i);
+//                bottomSheetDialog.dismiss();
+//
+//            }
+//        });
+//        rules.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i=new Intent(Dashboard.this,Rules_and_Regulation.class);
+//                startActivity(i);
+//            }
+//        });
     }
 }

@@ -14,7 +14,7 @@
 <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
 <!--    </style>-->
 
-    <style name="MyTheme.Hostel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="MyTheme.Hostel" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#F02525</item>
         <item name="colorPrimaryVariant">#F02525</item>
@@ -34,5 +34,7 @@
     <style name="Model" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bottomsheet</item>
     </style>
+
+
 
 </resources>

@@ -11,15 +11,18 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.LinearLayoutCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class login extends AppCompatActivity {
+    LinearLayoutCompat linearLayout;
     Button login;
     TextView forgot_pass;
     TextInputLayout username, password;
@@ -27,6 +30,7 @@ public class login extends AppCompatActivity {
     FirebaseUser mUser;
     ProgressBar progressBar;
     android.app.ProgressDialog ProgressDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +41,15 @@ public class login extends AppCompatActivity {
         login = findViewById(R.id.btn_login);
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
+        linearLayout=findViewById(R.id.linearlayout);
 
         progressBar =findViewById(R.id.progressBar);
 
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
         ProgressDialog = new ProgressDialog(this);
+
+
 
 
 
@@ -130,7 +137,7 @@ public class login extends AppCompatActivity {
                     i.putExtra("username",user);
                     startActivity(i);
                     finish();
-                    Toast.makeText(login.this,"Login Successfully.",Toast.LENGTH_SHORT).show();
+                    Snackbar.make(linearLayout,"Login Successfully.", Snackbar.LENGTH_SHORT).show();
                     ProgressDialog.hide();
                 }
                 else{
@@ -146,12 +153,14 @@ public class login extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
+        String user=username.getEditText().getText().toString();
         // Check if user is signed in (non-null)
         if(mUser != null) {
             // User is signed in
             Intent i = new Intent(login.this, Dashboard.class);
-            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            i.putExtra("username",user);
             startActivity(i);
+            finish();
         }
         else{
 

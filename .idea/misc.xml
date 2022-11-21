@@ -24,7 +24,7 @@
         <entry key="..\:/Hostel/app/src/main/res/drawable/ic_user2.xml" value="0.2505" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_add_anno_lay.xml" value="0.152" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_announcement.xml" value="0.21487603305785125" />
-        <entry key="..\:/Hostel/app/src/main/res/layout/activity_complain_box.xml" value="0.136" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/activity_complain_box.xml" value="0.2" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_forgot_password1.xml" value="0.23114035087719298" />
         <entry key="..\:/Hostel/app/src/main/res/layout/activity_forgot_password2.xml" value="0.1265625" />
@@ -40,6 +40,7 @@
         <entry key="..\:/Hostel/app/src/main/res/layout/bottomsheet_dialog.xml" value="0.176" />
         <entry key="..\:/Hostel/app/src/main/res/layout/complain_row.xml" value="0.17335526315789473" />
         <entry key="..\:/Hostel/app/src/main/res/layout/edittext_background.xml" value="0.14719945355191258" />
+        <entry key="..\:/Hostel/app/src/main/res/layout/gym_registration_full_dialog.xml" value="0.17335526315789473" />
         <entry key="..\:/Hostel/app/src/main/res/layout/toolbar.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/jvnab/.gradle/caches/transforms-3/bfec8dfcaf6c34e166a516bbd7a3f400/transformed/material-1.6.1/res/layout/test_exposed_dropdown_menu.xml" value="0.4" />
       </map>

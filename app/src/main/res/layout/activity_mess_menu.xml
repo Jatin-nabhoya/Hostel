@@ -14,20 +14,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_menu"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_gravity="center"
             android:entries="@array/messmenu"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="40dp"
+            />
 
         <ImageView
+            android:id="@+id/image_menu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:contentDescription="@string/imageDes"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="50dp"/>
 
 
 
