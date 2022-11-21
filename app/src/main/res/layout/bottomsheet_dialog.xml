@@ -30,7 +30,7 @@
             android:id="@+id/bts_tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="jandrew123@gmail.com"
+            android:text="jandrew123@rku.ac.in"
             android:textSize="20sp"
             android:textColor="#888888"/>
         <ImageView
